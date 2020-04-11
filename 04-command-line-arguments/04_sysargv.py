@@ -41,14 +41,14 @@ if __name__ == "__main__":
         except ValueError:
             lower = 0
         else:
-            lower = int(arguments[arg_pos+1])
+            lower = int(arguments[arg_pos + 1])
 
         try:
             arg_pos = arguments.index("--upper")
         except ValueError:
             upper = 100
         else:
-            upper = int(arguments[arg_pos+1])
+            upper = int(arguments[arg_pos + 1])
 
         output += f"Random number: {random.randint(lower, upper)}\n"
 
@@ -60,7 +60,6 @@ if __name__ == "__main__":
     else:
         # next line should be the position of file, will raise an IndexError if
         # not given
-        file_name = arguments[arg_pos+1]
-        with open(file_name, 'w') as f:
+        file_name = arguments[arg_pos + 1]
+        with open(file_name, "w") as f:
             f.write(output)
-

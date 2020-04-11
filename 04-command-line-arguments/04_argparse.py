@@ -29,12 +29,18 @@ if __name__ == "__main__":
         "--random", dest="rand", help="prints random number", action="store_true"
     )
     parser.add_argument(
-        "--lower", dest="lower", help="lower bound for random number", type=int,
-        default=0
+        "--lower",
+        dest="lower",
+        help="lower bound for random number",
+        type=int,
+        default=0,
     )
     parser.add_argument(
-        "--upper", dest="upper", help="upper bound for random number", type=int,
-        default=100
+        "--upper",
+        dest="upper",
+        help="upper bound for random number",
+        type=int,
+        default=100,
     )
     args = parser.parse_args()
 
@@ -49,4 +55,3 @@ if __name__ == "__main__":
         output += f"Random number: {random.randint(args.lower, args.upper)}\n"
 
     print(output)
-
