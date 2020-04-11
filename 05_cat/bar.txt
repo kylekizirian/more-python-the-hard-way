@@ -1,0 +1,4 @@
+Bar Line 1
+Bar Line 2
+Bar Line 3
+Bar Line 4
