@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """04 argparse usage
 
 Should be able to do the following

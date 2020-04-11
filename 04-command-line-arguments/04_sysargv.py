@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """04 sys.argv usage
 
 Should be able to do the following
